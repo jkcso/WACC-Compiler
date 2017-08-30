@@ -1,0 +1,12 @@
+# casting a byte to a short
+
+# Output:
+# %127
+
+# Program:
+
+begin
+  byte x = 127 ;
+  short y = x ;
+  println y
+end

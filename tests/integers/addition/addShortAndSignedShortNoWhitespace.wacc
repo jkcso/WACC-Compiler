@@ -1,0 +1,12 @@
+# adding a short to a signed short no whitespace
+
+# Output:
+# %-1
+
+# Program:
+
+begin
+  short x = 0 ;
+  short y = -1 ;
+  println x+y
+end

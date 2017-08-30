@@ -1,0 +1,17 @@
+# break is not used inside a loop
+
+# Output:
+# #syntax_error#
+
+# Exit:
+# 100
+
+# Program:
+
+begin
+  if true then
+    break
+  else
+    skip
+  fi
+end

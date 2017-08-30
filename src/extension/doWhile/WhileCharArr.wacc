@@ -1,0 +1,8 @@
+begin
+  char[] a = ['a', 'b', 'c'] ;
+  int i = 0 ;
+  while (i < 3) do
+    println a[i] ;
+    i = i + 1
+  done
+end

@@ -1,0 +1,12 @@
+# subtracting a short from an int
+
+# Output:
+# %42
+
+# Program:
+
+begin
+  short x = 2 ;
+  int y = 44 ;
+  println y - x
+end

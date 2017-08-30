@@ -1,0 +1,11 @@
+# declaring a short pair
+
+# Output:
+# %0x22008
+
+# Program:
+
+begin
+  pair(short, short) x = newpair(32767, 32767) ;
+  println x
+end

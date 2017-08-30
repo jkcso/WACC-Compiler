@@ -1,0 +1,11 @@
+# declaring a byte array and printing its first element
+
+# Output:
+# %127
+
+# Program:
+
+begin
+  byte[] x = [127] ;
+  println x[0]
+end

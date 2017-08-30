@@ -1,0 +1,11 @@
+# printing a short
+
+# Output:
+# %32767
+
+# Program:
+
+begin
+  short x = 32767 ;
+  println x
+end

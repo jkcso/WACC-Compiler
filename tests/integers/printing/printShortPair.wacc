@@ -1,0 +1,17 @@
+# declaring a short pair and printing its contents
+
+# Output:
+# %32767
+# %32767
+# %0x22008
+
+# Program:
+
+begin
+  pair(short, short) x = newpair(32767, 32767) ;
+  short y = fst x ;
+  short z = snd x ;
+  println y ;
+  println z ;
+  println x
+end

@@ -1,0 +1,12 @@
+# multiplying a short by a short
+
+# Output:
+# %1
+
+# Program:
+
+begin
+  short x = 1 ;
+  short y = 1 ;
+  println y * x
+end

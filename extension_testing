@@ -1,0 +1,71 @@
+#!/usr/bin/ruby
+
+require 'pathname'
+
+cp = "bin:lib/antlr-4.4-complete.jar"
+main = "Main"
+
+# Pass the directory as the FIRST argument to extension_testing!
+path_to_current = `pwd`
+# Remove leading and trailing whitespaces.
+path_to_current.strip!
+
+directory = ARGV[0]
+
+output_directory = "test_output"
+
+# Checks whether the test_output directory exists and deletes it if it does.
+if Dir.exist?("#{output_directory}")
+  `rm -r #{output_directory}`
+end
+
+# Creates the test_output directory
+Dir.mkdir("#{output_directory}")
+
+is_done = true
+
+puts "Testing..."
+
+Dir.glob("#{directory}/**/*.wacc") { |file|
+  filename = File.basename(file, ".wacc")
+
+  `java -cp #{cp} #{main} #{file} #{filename} #{path_to_current}/#{output_directory}`
+
+  if ($?.exitstatus != 0)
+    puts "#{filename} failed to compile..."
+    exit $?.exitstatus
+  end
+
+  `arm-linux-gnueabi-gcc -o #{output_directory}/#{filename} -mcpu=arm1176jzf-s -mtune=arm1176jzf-s #{output_directory}/#{filename}.s`
+  real_output = `qemu-arm -L /usr/arm-linux-gnueabi/ #{output_directory}/#{filename}`
+
+  if ($?.exitstatus != 0)
+    puts "#{filename} failed to execute..."
+    exit $?.exitstatus
+  end
+
+  f = File.open("#{file}", "r");
+  result = f.grep(/%/);
+  f.close
+
+  # I always take the first element of the result!
+  expected_output = result[0].to_s.match(/([-]?[0-9]+)|[a-z]+/).to_s
+
+  if expected_output.empty?
+    expected_output = nil
+  else
+    expected_output = expected_output.to_i
+  end
+
+  if expected_output.nil? || expected_output != real_output.to_i
+    is_done = false
+    puts "There is a problem with #{file}!"
+    puts "Expected: #{expected_output}; Got: #{real_output}"
+  end
+}
+
+if is_done
+  puts "Done!"
+else
+  puts "Failure..."
+end

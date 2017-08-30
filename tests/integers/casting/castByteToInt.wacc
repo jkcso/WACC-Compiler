@@ -1,0 +1,12 @@
+# casting a byte to an int
+
+# Output:
+# %127
+
+# Program:
+
+begin
+  byte x = 127 ;
+  int y = x ;
+  println y
+end

@@ -1,0 +1,12 @@
+# subtracting a byte from a short
+
+# Output:
+# %42
+
+# Program:
+
+begin
+  byte x = 2 ;
+  short y = 44 ;
+  println y - x
+end

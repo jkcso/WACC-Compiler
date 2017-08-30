@@ -1,0 +1,12 @@
+# multiplying an int by a byte
+
+# Output:
+# %42
+
+# Program:
+
+begin
+  byte x = 1 ;
+  int y = 42 ;
+  println y * x
+end

@@ -1,0 +1,19 @@
+# while is terminated without flipping b
+
+# Output:
+# end of loop
+
+# Program:
+
+begin
+  bool b = true ;
+  while b do
+    if !b then
+      b = !b
+    else
+      break
+    fi ;
+    println "in the loop"
+  done ;
+  println "end of loop"
+end

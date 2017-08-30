@@ -1,0 +1,12 @@
+# equating a short and a short
+
+# Output:
+# %true
+
+# Program:
+
+begin
+  short x = 1 ;
+  short y = 1 ;
+  println x >= y
+end

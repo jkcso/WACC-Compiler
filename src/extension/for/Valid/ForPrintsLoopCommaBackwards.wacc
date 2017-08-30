@@ -1,0 +1,18 @@
+# Prints the elements in the x,y.
+
+# Output:
+# 9, 8, 7, 6, 5, 4, 3, 2, 1.
+
+# Program:
+
+begin
+	for (int i = 9; i >= 0; i = i - 1)
+		if (i == 0) then
+			print i ;
+			print '.'
+		else
+		    print i ;
+			print ','
+		fi
+	done
+end

@@ -1,0 +1,12 @@
+# evaluating side effecting addition
+
+# Output:
+# 20
+
+# Program:
+
+begin
+  int x = 15 ;
+  x += 5;
+  println x
+end

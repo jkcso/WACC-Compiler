@@ -1,0 +1,17 @@
+# declaring a byte pair and printing its contents
+
+# Output:
+# %127
+# %127
+# %0x22008
+
+# Program:
+
+begin
+  pair(byte, byte) x = newpair(127, 127) ;
+  byte y = fst x ;
+  byte z = snd x ;
+  println y ;
+  println z ;
+  println x
+end

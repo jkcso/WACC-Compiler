@@ -1,0 +1,18 @@
+# Prints a string in reverse order.
+
+# Output:
+# o
+# r
+# a
+# n
+# g
+# e
+
+# Program:
+
+begin
+  string s = "orange" ;
+	for (int i = 5; i >= 0; i = i - 1)
+		println s[i]
+	done
+end

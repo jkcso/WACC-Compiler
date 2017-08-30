@@ -1,0 +1,12 @@
+# modding a byte by a short
+
+# Output:
+# %0
+
+# Program:
+
+begin
+  byte x = 1 ;
+  short y = 1 ;
+  println x % y
+end

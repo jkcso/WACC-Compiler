@@ -1,0 +1,12 @@
+# adding a byte to a signed byte with no whitespace
+
+# Output:
+# %-1
+
+# Program:
+
+begin
+  byte x = 0 ;
+  byte y = -1 ;
+  println x+y
+end

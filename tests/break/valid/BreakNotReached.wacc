@@ -1,0 +1,13 @@
+# simple while loop
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  while false do
+    println "in the loop" ;
+    break
+  done
+end

@@ -1,0 +1,13 @@
+# create a pair (char, pair (null, pair (int, int) )
+
+# Output:
+# #address
+
+# Program:
+
+begin
+  pair(int, int) p = newpair(2, 3) ;
+  pair(pair, pair) q = newpair(null, p) ;
+  pair(char, pair) r = newpair('a', q) ;
+  println r
+end

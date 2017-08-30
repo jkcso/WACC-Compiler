@@ -1,0 +1,12 @@
+# multiplying a short by a byte 
+
+# Output:
+# %1
+
+# Program:
+
+begin
+  byte x = 1 ;
+  short y = 1 ;
+  println y * x
+end

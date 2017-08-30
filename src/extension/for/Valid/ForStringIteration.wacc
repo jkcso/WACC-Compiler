@@ -1,0 +1,13 @@
+# Print string.
+
+# Output:
+# orange
+
+# Program:
+
+begin
+    string s = "orange" ;
+    for (int i = 0; i < 6; i = i + 1)
+        print s[i]
+    done
+end

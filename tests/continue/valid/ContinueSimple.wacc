@@ -1,0 +1,18 @@
+# simple continue in a loop
+
+# Output:
+# looping...
+# end of loop
+
+# Program:
+
+begin
+  bool b = true ;
+  while b do
+    println "looping..." ;
+    b = !b ;
+    continue ;
+    println "I am not printed :("
+  done ;
+  println "end of loop"
+end

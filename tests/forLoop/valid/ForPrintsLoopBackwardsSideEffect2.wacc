@@ -1,0 +1,16 @@
+# Prints i having each line in single line.
+
+# Output:
+# 9
+# 7
+# 5
+# 3
+# 1
+
+# Program:
+
+begin
+	for (int i = 9; i >= 0 ; i -= 2)
+		println i
+	done
+end

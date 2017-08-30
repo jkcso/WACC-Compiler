@@ -1,0 +1,12 @@
+# adding a byte to a short
+
+# Output:
+# %1
+
+# Program:
+
+begin
+  byte x = 0 ;
+  short y = 1 ;
+  println x + y
+end

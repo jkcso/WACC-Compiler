@@ -1,0 +1,12 @@
+# equating a byte and a byte
+
+# Output:
+# %true
+
+# Program:
+
+begin
+  byte x = 1 ;
+  byte y = 1 ;
+  println x <= y
+end

@@ -1,0 +1,12 @@
+# equating an int and a byte
+
+# Output:
+# %true
+
+# Program:
+
+begin
+  byte x = 1 ;
+  int y = 2147483647 ;
+  println x < y
+end

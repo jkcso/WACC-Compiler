@@ -1,0 +1,15 @@
+# simple continue while loop
+
+# Output:
+# After the loop i is 11
+
+# Program:
+
+begin
+  for (int i = 1; i <= 10; i = i + 1)
+    continue ;
+    println i
+  done ;
+  print "After the loop i is " ;
+  println i
+end

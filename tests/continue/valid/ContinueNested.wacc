@@ -1,0 +1,27 @@
+#
+
+# Output:
+# 1
+# in nested loop
+# final value of i is 3
+
+# Program:
+
+begin
+ int i = 0 ;
+  while i <= 2 do
+    while i <= 2 do
+      while i <= 2 do
+        i = i + 1 ;
+        if  i == 1 then
+          println i
+        else
+          continue
+        fi ;
+        println "in nested loop"
+      done
+    done
+  done ;
+  print "final value of i is" ;
+  println i
+end

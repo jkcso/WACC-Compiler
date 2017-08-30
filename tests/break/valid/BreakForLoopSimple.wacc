@@ -1,0 +1,15 @@
+# simple used of break in a loop
+
+# Output:
+# looping...
+# end of loop
+
+# Program:
+
+begin
+  for (int i = 0 ; i < 10000 ; i = i + 1)
+    println "looping..." ;
+    break
+  done ;
+  println "end of loop"
+end

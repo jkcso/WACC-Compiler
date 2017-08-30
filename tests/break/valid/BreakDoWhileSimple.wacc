@@ -1,0 +1,15 @@
+# simple used of break in a loop
+
+# Output:
+# looping...
+# end of loop
+
+# Program:
+
+begin
+  do
+    println "looping..." ;
+    break
+  while true ;
+  println "end of loop"
+end

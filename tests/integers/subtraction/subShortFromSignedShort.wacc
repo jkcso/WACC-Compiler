@@ -1,0 +1,12 @@
+# subtracting a short from a signed short
+
+# Output:
+# %-46
+
+# Program:
+
+begin
+  short x = 2 ;
+  short y = -44 ;
+  println y - x
+end

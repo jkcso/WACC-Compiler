@@ -1,0 +1,12 @@
+# adding a short to an int
+
+# Output:
+# %1
+
+# Program:
+
+begin
+  short x = 0 ;
+  int y = 1 ;
+  println x + y
+end

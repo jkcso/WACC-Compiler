@@ -1,0 +1,12 @@
+# dividing a short by an int and getting a truncated result
+
+# Output:
+# %0
+
+# Program:
+
+begin
+  int x = 2 ;
+  short y = 1 ;
+  println y / x
+end

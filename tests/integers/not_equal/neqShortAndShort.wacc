@@ -1,0 +1,12 @@
+# equating a short and a short
+
+# Output:
+# %false
+
+# Program:
+
+begin
+  short x = 1 ;
+  short y = 1 ;
+  println x != y
+end

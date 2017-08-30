@@ -1,0 +1,11 @@
+# declaring a short array and printing its first element
+
+# Output:
+# %32767
+
+# Program:
+
+begin
+  short[] x = [32767] ;
+  println x[0]
+end

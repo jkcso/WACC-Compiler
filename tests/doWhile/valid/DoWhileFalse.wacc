@@ -1,0 +1,14 @@
+# simple unentered while loop
+
+# Output:
+# looping...
+# end of loop
+
+# Program:
+
+begin
+  do
+    println "looping..."
+  while false ;
+  println "end of loop"
+end

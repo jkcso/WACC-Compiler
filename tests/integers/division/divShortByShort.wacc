@@ -1,0 +1,12 @@
+# dividing a short by a short
+
+# Output:
+# %2
+
+# Program:
+
+begin
+  short x = 1 ;
+  short y = 2 ;
+  println y / x
+end

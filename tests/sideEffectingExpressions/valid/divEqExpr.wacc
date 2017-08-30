@@ -1,0 +1,12 @@
+# evaluating side effecting division
+
+# Output:
+# 3
+
+# Program:
+
+begin
+  int x = 15 ;
+  x /= 5;
+  println x
+end

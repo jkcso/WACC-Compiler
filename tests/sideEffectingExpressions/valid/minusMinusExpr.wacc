@@ -1,0 +1,12 @@
+# evaluating side effecting subtraction with 1
+
+# Output:
+# 14
+
+# Program:
+
+begin
+  int x = 15 ;
+  x--;
+  println x
+end

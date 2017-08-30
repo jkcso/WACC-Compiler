@@ -1,0 +1,12 @@
+# adding a byte to an int
+
+# Output:
+# %1
+
+# Program:
+
+begin
+  byte x = 0 ;
+  int y = 1 ;
+  println x + y
+end

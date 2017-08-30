@@ -1,0 +1,12 @@
+# modding a short by an int
+
+# Output:
+# %0
+
+# Program:
+
+begin
+  short x = 0 ;
+  int y = 1 ;
+  println x % y
+end

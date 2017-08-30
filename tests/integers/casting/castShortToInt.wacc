@@ -1,0 +1,12 @@
+# casting a short to an int
+
+# Output:
+# %32767
+
+# Program:
+
+begin
+  short x = 32767 ;
+  int y = x ;
+  println y
+end

@@ -1,0 +1,11 @@
+# declaring a byte pair
+
+# Output:
+# %0x22008
+
+# Program:
+
+begin
+  pair(byte, byte) x = newpair(127, 127) ;
+  println x
+end

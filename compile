@@ -1,0 +1,25 @@
+#!/usr/bin/ruby
+# Ruby front-end for your compiler.
+# You are free to change the language used for this script,
+# but do *not* change its name.
+
+require 'pathname'
+
+cp = "bin:lib/antlr-4.4-complete.jar"
+main = "Main"
+
+filename = File.basename(ARGV[0], '.wacc')
+path = `pwd`
+
+`java -cp #{cp} #{main} #{ARGV[0]} #{filename} #{path}`
+
+if ($?.exitstatus != 0)
+  exit $?.exitstatus
+end
+
+# Bear in mind that if this throws an error it might have to be reported.
+
+# puts `arm-linux-gnueabi-gcc -o #{filename} -mcpu=arm1176jzf-s -mtune=arm1176jzf-s #{filename}.s`
+# puts `qemu-arm -L /usr/arm-linux-gnueabi/ #{filename}`
+
+exit $?.exitstatus

@@ -1,0 +1,12 @@
+# dividing a byte by a short and getting a truncated result
+
+# Output:
+# %0
+
+# Program:
+
+begin
+  short x = 2 ;
+  byte y = 1 ;
+  println y / x
+end

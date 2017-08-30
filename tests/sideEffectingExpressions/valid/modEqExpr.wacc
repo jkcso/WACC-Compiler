@@ -1,0 +1,12 @@
+# evaluating side effecting modulus
+
+# Output:
+# 1
+
+# Program:
+
+begin
+  int x = 15 ;
+  x %= 2;
+  println x
+end

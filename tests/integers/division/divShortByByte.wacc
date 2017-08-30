@@ -1,0 +1,12 @@
+# dividing a short by a byte 
+
+# Output:
+# %1
+
+# Program:
+
+begin
+  byte x = 2 ;
+  short y = 2 ;
+  println y / x
+end

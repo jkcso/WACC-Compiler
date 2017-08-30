@@ -1,0 +1,17 @@
+# simple continue while loop
+
+# Output:
+# After the loop i is 11
+
+# Program:
+
+begin
+  int i = 1 ;
+  while i <= 10 do
+    i = i + 1 ;
+    continue ;
+    println i
+  done ;
+  print "After the loop i is " ;
+  println i
+end

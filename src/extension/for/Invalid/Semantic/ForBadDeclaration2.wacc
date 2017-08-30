@@ -1,0 +1,15 @@
+# error -> i > 'a'
+
+# Output:
+# semantic_error
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  for (exit 4; i < 'a'; i = i + 1)
+    skip
+  done
+end

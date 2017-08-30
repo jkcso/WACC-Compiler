@@ -1,0 +1,8 @@
+begin
+  string a = "apple" ;
+  int i = 0 ;
+  while (i < 5) do
+    println a[i] ;
+    i = i + 1
+  done
+end

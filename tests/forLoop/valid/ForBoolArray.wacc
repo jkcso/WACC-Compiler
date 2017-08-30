@@ -1,0 +1,15 @@
+# Prints the elements of an array of type bool.
+
+# Output:
+# true
+# true
+# true
+
+# Program:
+
+begin
+  bool[] b = [true, true, true] ;
+	for (int i = 0; i < 3; i = i + 1)
+		println b[i]
+	done
+end

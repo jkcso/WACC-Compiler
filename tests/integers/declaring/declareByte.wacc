@@ -1,0 +1,11 @@
+# declaring a byte
+
+# Output:
+# %127
+
+# Program:
+
+begin
+  byte x = 127 ;
+  println x
+end

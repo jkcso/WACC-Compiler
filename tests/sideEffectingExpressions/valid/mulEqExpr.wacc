@@ -1,0 +1,12 @@
+# evaluating side effecting multiplication
+
+# Output:
+# 30
+
+# Program:
+
+begin
+  int x = 15 ;
+  x *= 2 ;
+  println x
+end

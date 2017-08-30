@@ -1,0 +1,12 @@
+# dividing a byte by a byte
+
+# Output:
+# %2
+
+# Program:
+
+begin
+  byte x = 1 ;
+  byte y = 2 ;
+  println y / x
+end
