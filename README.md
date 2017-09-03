@@ -1,8 +1,8 @@
-DISCLAIMER:
-1. The copyright of this project belongs to Imperial College London.
-2. From this code I removed some parts on purpose to make it broken.
+# WACC
 
-This repository is about the WACC language compilers lab.  WACC (pronounced “whack”) is a simple variant on the While family of languages encountered in many program reasoning/verification courses (in particular in the Models of Computation course taught to our 2nd year undergraduates of Imperial College London).  It features all of the common language constructs you would expect of a While-like language, such as program variables, simple expressions, conditional branching, looping and no-ops. It also features a rich set of extra constructs, such as simple types, functions, arrays and basic tuple creation on the heap.  The core of the language should be simple enough to reason about and the extensions should pose some interesting challenges and design choices for anyone implementing it.  
+## Synopsis
+This repository is about the WACC language compilers lab.  WACC (pronounced “whack”) is a simple variant on the While family of languages encountered in many program reasoning/verification courses (in particular in the Models of Computation course taught to our 2nd year undergraduates of Imperial College London).  It features all of the common language constructs you would expect of a While-like language, such as program variables, simple expressions, conditional branching, looping and no-ops. It also features a rich set of extra constructs, such as simple types, functions, arrays and basic tuple creation on the heap.  The core of the language should be simple enough to reason about and the extensions should pose some interesting challenges and design choices for anyone implementing it.
+  
 -----------------------------
 Files/Directories explained.
 -----------------------------
@@ -54,3 +54,7 @@ The compile script provides a frontend interface to our WACC compiler.
 Makefile is running 'make' in the root directory to build the WACC compiler.
 Starts from the antlrBuild script and the attempt to compile all .java files
 within the src directory.
+
+## License
+1. The copyright of this project belongs to Imperial College London.
+2. From this code I removed some parts on purpose to make it broken.
