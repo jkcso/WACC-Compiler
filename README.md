@@ -49,4 +49,4 @@ within the src directory.
 
 ## License
 1. The copyright of this project belongs to Imperial College London.
-2. From this code I removed some parts on purpose to make it broken.
+2. Part of my work is intentionally broken or misleading to avoid disrespectful people from copying and pasting.
